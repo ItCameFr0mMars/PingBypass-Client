@@ -1,0 +1,211 @@
+{
+  "mappings": {
+    "me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft": {
+      "runGameLoop": "Lnet/minecraft/client/Minecraft;func_71411_J()V",
+      "Lnet/minecraft/profiler/Profiler;startSection(Ljava/lang/String;)V": "Lnet/minecraft/profiler/Profiler;func_76320_a(Ljava/lang/String;)V",
+      "Lnet/minecraft/client/Minecraft;world:Lnet/minecraft/client/multiplayer/WorldClient;": "Lnet/minecraft/client/Minecraft;field_71441_e:Lnet/minecraft/client/multiplayer/WorldClient;",
+      "Lnet/minecraft/profiler/Profiler;endSection()V": "Lnet/minecraft/profiler/Profiler;func_76319_b()V",
+      "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V",
+      "middleClickMouse": "Lnet/minecraft/client/Minecraft;func_147112_ai()V",
+      "runTick": "Lnet/minecraft/client/Minecraft;func_71407_l()V",
+      "shutdownMinecraftApplet": "Lnet/minecraft/client/Minecraft;func_71405_e()V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/render/entity/MixinEntityRenderer": {
+      "net/minecraft/client/renderer/GlStateManager.clear(I)V": "Lnet/minecraft/client/renderer/GlStateManager;func_179086_m(I)V",
+      "renderWorldPass": "Lnet/minecraft/client/renderer/EntityRenderer;func_175068_a(IFJ)V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/network/server/ISPacketSetSlot": {
+      "windowId": "field_149179_a:I"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake": {
+      "Lnet/minecraft/network/PacketBuffer;writeString(Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;": "Lnet/minecraft/network/PacketBuffer;func_180714_a(Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;",
+      "port": "field_149599_c:I",
+      "writePacketData": "Lnet/minecraft/network/handshake/client/C00Handshake;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V",
+      "ip": "field_149598_b:Ljava/lang/String;"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager": {
+      "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
+      "closeChannel": "Lnet/minecraft/network/NetworkManager;func_150718_a(Lnet/minecraft/util/text/ITextComponent;)V",
+      "dispatchPacket": "Lnet/minecraft/network/NetworkManager;func_150732_b(Lnet/minecraft/network/Packet;[Lio/netty/util/concurrent/GenericFutureListener;)V",
+      "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/MixinWorld": {
+      "isChunkLoaded": "func_175680_a(IIZ)Z"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/MixinEntityPlayerSP": {
+      "lastReportedPitch": "field_175165_bM:F",
+      "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+      "Lnet/minecraft/client/entity/EntityPlayerSP;onUpdateWalkingPlayer()V": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+      "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V",
+      "lastReportedYaw": "field_175164_bL:F"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiMultiPlayer": {
+      "actionPerformed": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146284_a(Lnet/minecraft/client/gui/GuiButton;)V",
+      "confirmClicked": "Lnet/minecraft/client/gui/GuiMultiplayer;func_73878_a(ZI)V",
+      "createButtons": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146794_g()V",
+      "connectToServer": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146791_a(Lnet/minecraft/client/multiplayer/ServerData;)V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/IPlayerControllerMP": {
+      "currentPlayerItem": "field_78777_l:I",
+      "syncCurrentPlayItem": "func_78750_j()V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase": {
+      "notifyDataManagerChange": "Lnet/minecraft/entity/EntityLivingBase;func_184206_a(Lnet/minecraft/network/datasync/DataParameter;)V",
+      "getArmSwingAnimationEnd": "func_82166_i()I"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/gui/IContainer": {
+      "transactionID": "field_75150_e:S"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiSubtitleOverlay": {
+      "renderSubtitles": "Lnet/minecraft/client/gui/GuiSubtitleOverlay;func_184068_a(Lnet/minecraft/client/gui/ScaledResolution;)V"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding": {
+      "isKeyDown": "Lnet/minecraft/client/settings/KeyBinding;func_151470_d()Z"
+    },
+    "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat": {
+      "Lnet/minecraft/util/TabCompleter;complete()V": "Lnet/minecraft/util/TabCompleter;func_186841_a()V",
+      "drawScreen(IIF)V": "Lnet/minecraft/client/gui/GuiChat;func_73863_a(IIF)V",
+      "keyTyped": "Lnet/minecraft/client/gui/GuiChat;func_73869_a(CI)V"
+    }
+  },
+  "data": {
+    "notch": {
+      "me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft": {
+        "runGameLoop": "Lbib;az()V",
+        "Lnet/minecraft/profiler/Profiler;startSection(Ljava/lang/String;)V": "Lrl;a(Ljava/lang/String;)V",
+        "Lnet/minecraft/client/Minecraft;world:Lnet/minecraft/client/multiplayer/WorldClient;": "Lbib;f:Lbsb;",
+        "Lnet/minecraft/profiler/Profiler;endSection()V": "Lrl;b()V",
+        "runTickKeyboard": "Lbib;aD()V",
+        "middleClickMouse": "Lbib;aH()V",
+        "runTick": "Lbib;t()V",
+        "shutdownMinecraftApplet": "Lbib;h()V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/render/entity/MixinEntityRenderer": {
+        "net/minecraft/client/renderer/GlStateManager.clear(I)V": "Lbus;m(I)V",
+        "renderWorldPass": "Lbuq;a(IFJ)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/server/ISPacketSetSlot": {
+        "windowId": "a:I"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake": {
+        "Lnet/minecraft/network/PacketBuffer;writeString(Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;": "Lgy;a(Ljava/lang/String;)Lgy;",
+        "port": "c:I",
+        "writePacketData": "Lmd;b(Lgy;)V",
+        "ip": "b:Ljava/lang/String;"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lgw;a(Lht;)V",
+        "closeChannel": "Lgw;a(Lhh;)V",
+        "dispatchPacket": "Lgw;a(Lht;[Lio/netty/util/concurrent/GenericFutureListener;)V",
+        "channelRead0": "Lgw;a(Lio/netty/channel/ChannelHandlerContext;Lht;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/MixinWorld": {
+        "isChunkLoaded": "a(IIZ)Z"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/MixinEntityPlayerSP": {
+        "lastReportedPitch": "ci:F",
+        "onUpdateWalkingPlayer": "Lbud;N()V",
+        "Lnet/minecraft/client/entity/EntityPlayerSP;onUpdateWalkingPlayer()V": "Lbud;N()V",
+        "onUpdate": "Lbud;B_()V",
+        "lastReportedYaw": "ch:F"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiMultiPlayer": {
+        "actionPerformed": "Lbnf;a(Lbja;)V",
+        "confirmClicked": "Lbnf;a(ZI)V",
+        "createButtons": "Lbnf;a()V",
+        "connectToServer": "Lbnf;a(Lbse;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/IPlayerControllerMP": {
+        "currentPlayerItem": "j:I",
+        "syncCurrentPlayItem": "n()V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase": {
+        "notifyDataManagerChange": "Lvp;a(Lmy;)V",
+        "getArmSwingAnimationEnd": "p()I"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/IContainer": {
+        "transactionID": "a:S"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiSubtitleOverlay": {
+        "renderSubtitles": "Lbju;a(Lbit;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding": {
+        "isKeyDown": "Lbhy;e()Z"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat": {
+        "Lnet/minecraft/util/TabCompleter;complete()V": "Lblq;a()V",
+        "drawScreen(IIF)V": "Lbkn;a(IIF)V",
+        "keyTyped": "Lbkn;a(CI)V"
+      }
+    },
+    "searge": {
+      "me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft": {
+        "runGameLoop": "Lnet/minecraft/client/Minecraft;func_71411_J()V",
+        "Lnet/minecraft/profiler/Profiler;startSection(Ljava/lang/String;)V": "Lnet/minecraft/profiler/Profiler;func_76320_a(Ljava/lang/String;)V",
+        "Lnet/minecraft/client/Minecraft;world:Lnet/minecraft/client/multiplayer/WorldClient;": "Lnet/minecraft/client/Minecraft;field_71441_e:Lnet/minecraft/client/multiplayer/WorldClient;",
+        "Lnet/minecraft/profiler/Profiler;endSection()V": "Lnet/minecraft/profiler/Profiler;func_76319_b()V",
+        "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V",
+        "middleClickMouse": "Lnet/minecraft/client/Minecraft;func_147112_ai()V",
+        "runTick": "Lnet/minecraft/client/Minecraft;func_71407_l()V",
+        "shutdownMinecraftApplet": "Lnet/minecraft/client/Minecraft;func_71405_e()V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/render/entity/MixinEntityRenderer": {
+        "net/minecraft/client/renderer/GlStateManager.clear(I)V": "Lnet/minecraft/client/renderer/GlStateManager;func_179086_m(I)V",
+        "renderWorldPass": "Lnet/minecraft/client/renderer/EntityRenderer;func_175068_a(IFJ)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/server/ISPacketSetSlot": {
+        "windowId": "field_149179_a:I"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake": {
+        "Lnet/minecraft/network/PacketBuffer;writeString(Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;": "Lnet/minecraft/network/PacketBuffer;func_180714_a(Ljava/lang/String;)Lnet/minecraft/network/PacketBuffer;",
+        "port": "field_149599_c:I",
+        "writePacketData": "Lnet/minecraft/network/handshake/client/C00Handshake;func_148840_b(Lnet/minecraft/network/PacketBuffer;)V",
+        "ip": "field_149598_b:Ljava/lang/String;"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
+        "closeChannel": "Lnet/minecraft/network/NetworkManager;func_150718_a(Lnet/minecraft/util/text/ITextComponent;)V",
+        "dispatchPacket": "Lnet/minecraft/network/NetworkManager;func_150732_b(Lnet/minecraft/network/Packet;[Lio/netty/util/concurrent/GenericFutureListener;)V",
+        "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/MixinWorld": {
+        "isChunkLoaded": "func_175680_a(IIZ)Z"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/MixinEntityPlayerSP": {
+        "lastReportedPitch": "field_175165_bM:F",
+        "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+        "Lnet/minecraft/client/entity/EntityPlayerSP;onUpdateWalkingPlayer()V": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V",
+        "onUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70071_h_()V",
+        "lastReportedYaw": "field_175164_bL:F"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiMultiPlayer": {
+        "actionPerformed": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146284_a(Lnet/minecraft/client/gui/GuiButton;)V",
+        "confirmClicked": "Lnet/minecraft/client/gui/GuiMultiplayer;func_73878_a(ZI)V",
+        "createButtons": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146794_g()V",
+        "connectToServer": "Lnet/minecraft/client/gui/GuiMultiplayer;func_146791_a(Lnet/minecraft/client/multiplayer/ServerData;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/player/IPlayerControllerMP": {
+        "currentPlayerItem": "field_78777_l:I",
+        "syncCurrentPlayItem": "func_78750_j()V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase": {
+        "notifyDataManagerChange": "Lnet/minecraft/entity/EntityLivingBase;func_184206_a(Lnet/minecraft/network/datasync/DataParameter;)V",
+        "getArmSwingAnimationEnd": "func_82166_i()I"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/IContainer": {
+        "transactionID": "field_75150_e:S"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiSubtitleOverlay": {
+        "renderSubtitles": "Lnet/minecraft/client/gui/GuiSubtitleOverlay;func_184068_a(Lnet/minecraft/client/gui/ScaledResolution;)V"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding": {
+        "isKeyDown": "Lnet/minecraft/client/settings/KeyBinding;func_151470_d()Z"
+      },
+      "me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat": {
+        "Lnet/minecraft/util/TabCompleter;complete()V": "Lnet/minecraft/util/TabCompleter;func_186841_a()V",
+        "drawScreen(IIF)V": "Lnet/minecraft/client/gui/GuiChat;func_73863_a(IIF)V",
+        "keyTyped": "Lnet/minecraft/client/gui/GuiChat;func_73869_a(CI)V"
+      }
+    }
+  }
+}

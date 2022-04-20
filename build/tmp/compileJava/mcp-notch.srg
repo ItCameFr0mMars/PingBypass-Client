@@ -1,0 +1,14 @@
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/leftClickCounter me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/ai
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/rightClickDelayTimer me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/as
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/scheduledTasks me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/aQ
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/rotationYaw me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/v
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/rotationPitch me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/w
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/dataManager me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/Y
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase/HEALTH me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase/f
+FD: me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat/inputField me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat/a
+FD: me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake/ip me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake/b
+FD: me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding/pressed me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding/i
+MD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/getEntityBoundingBox ()Lnet/minecraft/util/math/AxisAlignedBB; me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/bw ()Lbhb;
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/isChannelOpen ()Z me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/g ()Z
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/flushOutboundQueue ()V me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/m ()V
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/dispatchPacket (Lnet/minecraft/network/Packet;[Lio/netty/util/concurrent/GenericFutureListener;)V me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/a (Lht;[Lio/netty/util/concurrent/GenericFutureListener;)V

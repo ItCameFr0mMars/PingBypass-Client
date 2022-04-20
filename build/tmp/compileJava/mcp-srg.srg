@@ -1,0 +1,14 @@
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/leftClickCounter me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/field_71429_W
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/rightClickDelayTimer me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/field_71467_ac
+FD: me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/scheduledTasks me/earth/earthhack/impl/core/mixins/minecraft/MixinMinecraft/field_152351_aB
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/rotationYaw me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/field_70177_z
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/rotationPitch me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/field_70125_A
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/dataManager me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/field_70180_af
+FD: me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase/HEALTH me/earth/earthhack/impl/core/mixins/minecraft/entity/living/MixinEntityLivingBase/field_184632_c
+FD: me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat/inputField me/earth/earthhack/impl/core/mixins/minecraft/gui/MixinGuiChat/field_146415_a
+FD: me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake/ip me/earth/earthhack/impl/core/mixins/minecraft/network/client/MixinC00Handshake/field_149598_b
+FD: me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding/pressed me/earth/earthhack/impl/core/mixins/minecraft/util/MixinKeyBinding/field_74513_e
+MD: me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/getEntityBoundingBox ()Lnet/minecraft/util/math/AxisAlignedBB; me/earth/earthhack/impl/core/mixins/minecraft/entity/MixinEntity/func_174813_aQ ()Lnet/minecraft/util/math/AxisAlignedBB;
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/isChannelOpen ()Z me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/func_150724_d ()Z
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/flushOutboundQueue ()V me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/func_150733_h ()V
+MD: me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/dispatchPacket (Lnet/minecraft/network/Packet;[Lio/netty/util/concurrent/GenericFutureListener;)V me/earth/earthhack/impl/core/mixins/minecraft/network/MixinNetworkManager/func_150732_b (Lnet/minecraft/network/Packet;[Lio/netty/util/concurrent/GenericFutureListener;)V
